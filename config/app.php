@@ -153,7 +153,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Ivanvgladkov\Geocoding\GeocodingServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -209,6 +209,10 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+    ],
+
+    'google' => [
+        'api_key' => 'AIzaSyBaoba8tUOmzzX3RC525Ug_Rx27o22u83Q',
     ],
 
 ];
