@@ -154,6 +154,7 @@ return [
          * Package Service Providers...
          */
         Ivanvgladkov\Geocoding\GeocodingServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -209,10 +210,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-    ],
-
-    'google' => [
-        'api_key' => 'AIzaSyBaoba8tUOmzzX3RC525Ug_Rx27o22u83Q',
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];
